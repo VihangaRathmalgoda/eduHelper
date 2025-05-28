@@ -1,0 +1,25 @@
+:root {
+  --body-bg: #e6f2ff;
+  --text-color: #333;
+  --navbar-bg: #0066cc;
+  --sidebar-bg: #004080;
+  --sidebar-text: #cce0ff;
+  --sidebar-header-bg: #00264d;
+  --sidebar-hover-bg: rgba(255, 255, 255, 0.1);
+  --sidebar-active-bg: rgba(255, 255, 255, 0.2);
+  --sidebar-active-border: #66b3ff;
+  --card-bg: #ffffff;
+  --primary-color: #0066cc;
+}
+
+@keyframes glowing-outline {
+  0% {
+    filter: drop-shadow(0 0 5px #0d6efd);
+  }
+  50% {
+    filter: drop-shadow(0 0 15px #0d6efd) drop-shadow(0 0 25px #0d6efd);
+  }
+  100% {
+    filter: drop-shadow(0 0 5px #0d6efd);
+  }
+}

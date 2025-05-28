@@ -1,0 +1,64 @@
+:root {
+  --body-bg: #f5f7fb;
+  --text-color: #333;
+  --navbar-bg: #ffffff;
+  --sidebar-bg: #2c3e50;
+  --sidebar-text: #b8c7ce;
+  --sidebar-header-bg: #1a2226;
+  --sidebar-hover-bg: rgba(255, 255, 255, 0.1);
+  --sidebar-active-bg: rgba(255, 255, 255, 0.1);
+  --sidebar-active-border: #3c8dbc;
+  --card-bg: #ffffff;
+  --primary-color: #3c8dbc;
+
+  --glow-start-color-1: #1a2226;
+  --glow-start-color-2: #2c3e50;
+  --glow-end-color-1: #2c3e50;
+  --glow-end-color-2: #1a2226;
+}
+@keyframes glowing-outline {
+  0% {
+    filter: drop-shadow(0 0 5px #1a2226);
+  }
+  50% {
+    filter: drop-shadow(0 0 15px #2c3e50) drop-shadow(0 0 25px #1a2226);
+  }
+  100% {
+    filter: drop-shadow(0 0 5px #2c3e50);
+  }
+}
+.footer {
+  background-color: var(--navbar-bg); /* same as navbar background */
+  color: var(--text-color); /* same as body text color */
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  border-top: 1px solid var(--sidebar-active-border);
+}
+
+.footer-text {
+  color: var(--text-color);
+  margin: 0;
+}
+
+.footer-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.footer-links li a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links li a:hover,
+.footer-links li a:focus {
+  color: var(--sidebar-active-border);
+  text-decoration: underline;
+}

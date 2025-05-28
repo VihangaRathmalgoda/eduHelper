@@ -1,0 +1,28 @@
+:root {
+  --body-bg: #1a1a2e;
+  --text-color: #e6e6e6;
+  --navbar-bg: #16213e;
+  --sidebar-bg: #0f3460;
+  --sidebar-text: #b8c7ce;
+  --sidebar-header-bg: #0a1929;
+  --sidebar-hover-bg: rgba(255, 255, 255, 0.1);
+  --sidebar-active-bg: rgba(255, 255, 255, 0.2);
+  --sidebar-active-border: #e94560;
+  --card-bg: #16213e;
+  --primary-color: #e94560;
+}
+@keyframes glowing-outline {
+  0% {
+    filter: drop-shadow(0 0 5px #e6e6e6);
+  }
+  50% {
+    filter: drop-shadow(0 0 15px #e6e6e6) drop-shadow(0 0 25px #e6e6e6);
+  }
+  100% {
+    filter: drop-shadow(0 0 5px #0f3460);
+  }
+}
+
+.card-title {
+  color: var(--text-color);
+}
